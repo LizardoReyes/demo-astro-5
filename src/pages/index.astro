@@ -1,5 +1,6 @@
 ---
 const country = Astro.request.headers.get('X-Vercel-Ip-Country') || 'ES';
+export const prerender = false;
 ---
 
 <html lang="en">
