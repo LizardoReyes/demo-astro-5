@@ -1,5 +1,5 @@
 ---
-
+const country = Astro.request.headers.get('X-Vercel-Ip-Country') || 'ES';
 ---
 
 <html lang="en">
@@ -12,5 +12,6 @@
 	</head>
 	<body>
 		<h1>Astro</h1>
+        <p>Your country is: {country}</p>
 	</body>
 </html>

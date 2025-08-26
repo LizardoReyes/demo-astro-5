@@ -1,0 +1,9 @@
+---
+import UserInfo from "../components/UserInfo.astro";
+---
+
+<h1>Página con Server Island</h1>
+
+<UserInfo server:defer>
+    <p slot="fallback">Cargando datos del usuario...</p>
+</UserInfo>
